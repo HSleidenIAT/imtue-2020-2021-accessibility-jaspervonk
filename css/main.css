@@ -57,6 +57,10 @@ a{
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 100%, 0% 100%);
 }
 
+.header__logoText{
+  font-size: 3rem;
+}
+
 .header__skip{
   position: absolute;
   left: 0;

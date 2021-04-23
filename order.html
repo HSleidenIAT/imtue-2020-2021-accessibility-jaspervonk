@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo" href="#">NANO</a>
+      <a class="header__logo" href="#"><h1 class="header__logoText">NANO</h1></a>
       <nav class="header__nav">
         <div id="js--menuButton" class="header__nav__menu">
           <div class="header__nav__menuLine"></div>
@@ -38,7 +38,7 @@
           <article class="orderForm__formSection__form">
             <div class="orderForm__formSection__formSet">
               <label class="orderForm__formSection__formSet__label" for="gender">Gender</label>
-              <select class="orderForm__formSection__formSet__input" name="gender" aria-label="Select your gender">
+              <select class="orderForm__formSection__formSet__input" name="gender" id="gender" aria-label="Select your gender">
                 <option value="" disabled selected hidden></option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
@@ -47,15 +47,15 @@
             </div>
             <div class="orderForm__formSection__formSet">
               <label class="orderForm__formSection__formSet__label" for="name">Name *</label>
-              <input class="orderForm__formSection__formSet__input" type="text" name="name" value="" required aria-label="Enter your name">
+              <input class="orderForm__formSection__formSet__input" type="text" name="name" id="name" required aria-label="Enter your name">
             </div>
             <div class="orderForm__formSection__formSet">
               <label class="orderForm__formSection__formSet__label" for="email">E-mail *</label>
-              <input class="orderForm__formSection__formSet__input" type="text" name="email" value="" required aria-label="Enter your email">
+              <input class="orderForm__formSection__formSet__input" type="text" name="email" id="email" required aria-label="Enter your email">
             </div>
             <div class="orderForm__formSection__formSet">
               <label class="orderForm__formSection__formSet__label" for="phone">Phone Number</label>
-              <input class="orderForm__formSection__formSet__input" type="text" name="phone" placeholder="06 12345678" aria-label="Enter your phone number">
+              <input class="orderForm__formSection__formSet__input" type="text" name="phone" id="phone" placeholder="06 12345678" aria-label="Enter your phone number">
             </div>
           </article>
         </section>
@@ -64,20 +64,20 @@
           <article class="orderForm__formSection__form">
             <div class="orderForm__formSection__formSet">
               <label class="orderForm__formSection__formSet__label" for="street">Street *</label>
-              <input class="orderForm__formSection__formSet__input" type="text" name="street" value="" required aria-label="Enter your street name">
+              <input class="orderForm__formSection__formSet__input" type="text" name="street" id="street" required aria-label="Enter your street name">
             </div>
             <div class="orderForm__formSection__formSet">
               <label class="orderForm__formSection__formSet__label" for="housenumber">House Number *</label>
-              <input class="orderForm__formSection__formSet__input orderForm__formSection__formSet__input--half" type="text" name="housenumber" value="" required placeholder="Nr." aria-label="Enter your House number">
-              <input class="orderForm__formSection__formSet__input orderForm__formSection__formSet__input--half" type="text" name="housenumber" value="" placeholder="Suffix" aria-label="Enter your House number suffix">
+              <input class="orderForm__formSection__formSet__input orderForm__formSection__formSet__input--half" type="text" name="housenumber" id="housenumber" required placeholder="Nr." aria-label="Enter your House number">
+              <input class="orderForm__formSection__formSet__input orderForm__formSection__formSet__input--half" type="text" name="housenumber" placeholder="Suffix" aria-label="Enter your House number suffix">
             </div>
             <div class="orderForm__formSection__formSet">
-              <label class="orderForm__formSection__formSet__label" for="email">ZIP/Postal Code *</label>
-              <input class="orderForm__formSection__formSet__input" type="text" name="email" placeholder="1111 AA" required aria-label="Enter your Postal Code">
+              <label class="orderForm__formSection__formSet__label" for="postalcode">ZIP/Postal Code *</label>
+              <input class="orderForm__formSection__formSet__input" type="text" name="email" id="postalcode" placeholder="1111 AA" required aria-label="Enter your Postal Code">
             </div>
             <div class="orderForm__formSection__formSet">
               <label class="orderForm__formSection__formSet__label" for="city">City *</label>
-              <input class="orderForm__formSection__formSet__input" type="text" name="city" required aria-label="Enter your city name">
+              <input class="orderForm__formSection__formSet__input" type="text" name="city" id="city" required aria-label="Enter your city name">
             </div>
           </article>
         </section>
