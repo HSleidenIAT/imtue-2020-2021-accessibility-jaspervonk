@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <title> Nano Cables </title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo" href="#">NANO</a>
+      <nav class="header__nav">
+        <div id="js--menuButton" class="header__nav__menu">
+          <div class="header__nav__menuLine"></div>
+          <div class="header__nav__menuLine"></div>
+          <div class="header__nav__menuLine"></div>
+        </div>
+        <ul id="js--navList" class="header__nav__list">
+          <li class="header__nav__listItem"><a>Home</a></li>
+          <li class="header__nav__listItem"><a>Cables</a></li>
+          <li class="header__nav__listItem"><a>News</a></li>
+          <li class="header__nav__listItem"><a>About us</a></li>
+          <li class="header__nav__listItem"><a>Contact</a></li>
+          <li class="header__nav__listItem"><a>Search <i class="icon-search"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="orderForm">
+      <heading class="orderForm__heading">
+        <h1> Order Form </h1>
+      </heading>
+      <form>
+        <section class="orderForm__formSection">
+          <h2 class="orderForm__formSection__heading"> Personal Info </h2>
+          <article class="orderForm__formSection__form">
+            <div class="orderForm__formSection__formSet">
+              <label class="orderForm__formSection__formSet__label" for="gender">Gender</label>
+              <select class="orderForm__formSection__formSet__input" name="gender" aria-label="Select your gender">
+                <option value="" disabled selected hidden></option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="orderForm__formSection__formSet">
+              <label class="orderForm__formSection__formSet__label" for="name">Name *</label>
+              <input class="orderForm__formSection__formSet__input" type="text" name="name" value="" required aria-label="Enter your name">
+            </div>
+            <div class="orderForm__formSection__formSet">
+              <label class="orderForm__formSection__formSet__label" for="email">E-mail *</label>
+              <input class="orderForm__formSection__formSet__input" type="text" name="email" value="" required aria-label="Enter your email">
+            </div>
+            <div class="orderForm__formSection__formSet">
+              <label class="orderForm__formSection__formSet__label" for="phone">Phone Number</label>
+              <input class="orderForm__formSection__formSet__input" type="text" name="phone" placeholder="06 12345678" aria-label="Enter your phone number">
+            </div>
+          </article>
+        </section>
+        <section class="orderForm__formSection">
+          <h2 class="orderForm__formSection__heading"> Delivery Address </h2>
+          <article class="orderForm__formSection__form">
+            <div class="orderForm__formSection__formSet">
+              <label class="orderForm__formSection__formSet__label" for="street">Street *</label>
+              <input class="orderForm__formSection__formSet__input" type="text" name="street" value="" required aria-label="Enter your street name">
+            </div>
+            <div class="orderForm__formSection__formSet">
+              <label class="orderForm__formSection__formSet__label" for="housenumber">House Number *</label>
+              <input class="orderForm__formSection__formSet__input orderForm__formSection__formSet__input--half" type="text" name="housenumber" value="" required placeholder="Nr." aria-label="Enter your House number">
+              <input class="orderForm__formSection__formSet__input orderForm__formSection__formSet__input--half" type="text" name="housenumber" value="" placeholder="Suffix" aria-label="Enter your House number suffix">
+            </div>
+            <div class="orderForm__formSection__formSet">
+              <label class="orderForm__formSection__formSet__label" for="email">ZIP/Postal Code *</label>
+              <input class="orderForm__formSection__formSet__input" type="text" name="email" placeholder="1111 AA" required aria-label="Enter your Postal Code">
+            </div>
+            <div class="orderForm__formSection__formSet">
+              <label class="orderForm__formSection__formSet__label" for="city">City *</label>
+              <input class="orderForm__formSection__formSet__input" type="text" name="city" required aria-label="Enter your city name">
+            </div>
+          </article>
+        </section>
+        <div class="orderForm__formSection__options">
+          <button class="orderForm__formSection__optionsButton" name="button">Cancel</button>
+          <button class="orderForm__formSection__optionsButton orderForm__formSection__optionsButton--red" type="submit" name="button">Place Order</button>
+        </div>
+      </form>
+  </body>
+  <script type="text/javascript" src="/js/main.js"></script>
+</html>
